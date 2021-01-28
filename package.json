@@ -1,0 +1,11 @@
+{
+	"name": "m4rch",
+	"version": "2.1.0",
+	"description": "a package to make my programming life.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "m4rch",
+	"license": "ISC"
+}
