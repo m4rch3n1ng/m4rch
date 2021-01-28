@@ -1,6 +1,6 @@
 {
 	"name": "m4rch",
-	"version": "2.2.0",
+	"version": "2.2.1",
 	"description": "a package to make my programming life.",
 	"main": "index.js",
 	"scripts": {
