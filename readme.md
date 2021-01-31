@@ -12,26 +12,22 @@ $ npm i m4rch
 - [Installation](#installation)
 - [Table of Contents](#table-of-contents)
 - [Examples](#examples)
-	- [main](#main)
 	- [console](#console)
 	- [fs](#fs)
 	- [object](#object)
+	- [net](#net)
 
 # Examples
-## main
-```javascript
-const { print } = require("m4rch")
-
-print("Hello World")
-```
 
 ## console
 ```javascript
 const { input } = require("m4rch")
 
-async function ask() {
+async function ask () {
 	let fav_food = await input("what is your favorite food? ")
 }
+
+ask()
 ```
 
 ## fs
@@ -75,7 +71,19 @@ let descending = sortByValue(dict, true)
 ```javascript
 const { countValues } = require("m4rch")
 
-let dict = ["test", "test", "a", "test", "z"]
+let arr = ["a", "b", "c", "a", "b", "a"]
 
-let counted = countValues(dict)
+let counted = countValues(arr)
+```
+
+## net
+
+```js
+const { download } = require("m4rch")
+
+async function load () {
+	let words = await download("http://www.mieliestronk.com/corncob_lowercase.txt")
+}
+
+load()
 ```
